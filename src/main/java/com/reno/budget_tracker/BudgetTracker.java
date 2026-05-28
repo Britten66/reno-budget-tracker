@@ -13,16 +13,14 @@ import java.util.List;
  * this class will contain 7 methods for budget tracking
  * ------
  * this will contain more random notes and thinking along the way
- *
  *setting total to 0 ahead of time when building out that method
  *an important part of clean code chp 2, using meaningful names will be added on to this starting with the for the loop
- *
  *the for loop checks for singleExpense sum & returns the total which was set to 0 before.
  *while the loop is running it checks for each singleExpense inside expenses
- *
- *getRemaining budget takes budget and takes away whatever getTotalSpent value is
- *
- * getSpentByCategory loops and will ONLY add an amound based on cateory needing to match & this also uses ignorecase.
+
+ * getRemainingBudget takes budget and takes away whatever getTotalExpense value is * getSpentByCategory loops and will ONLY add an amound based on cateory needing to match & this also uses ignorecase.
+ * isOverBudget returns true/false if total spent passed the budget
+ *  getPercentUsed is using TotalExpenses / budget * 100 with a zero check so it never divides by zero
  */
 
 public class BudgetTracker {
