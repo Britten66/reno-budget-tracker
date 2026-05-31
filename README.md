@@ -16,17 +16,34 @@ You add expenses by category and it does the math: total spent, budget remaining
 For testing I used @BeforeEach to avoid repeating setup before each test, and a parameterized test to check multiple category inputs (paint, Paint, PAINT)
 
 #
+here are my passing tests.
 
+<img width="608" height="353" alt="image" src="https://github.com/user-attachments/assets/e3315613-4a2b-4037-8b5d-df50aa5a18f6" />
+
+#
+
+#
+Part of clean code used is meaningful names, for expenses and tests it was important to make sure all defined variables and classes were clearly defined 
+
+#
+here is a showcase of some of those names that stand out to me in this project 
+
+<img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
+
+#
+here is a showcase of using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
+The constructor also rejects negative amounts.
+<img width="649" height="205" alt="image" src="https://github.com/user-attachments/assets/b15c2fc4-c4bd-4e3e-a9db-a9b22c7a4a4f" />
 
 #
 
 
 
 here is an example of my actions passing along with secret protection 
+#
 
 <img width="531" height="335" alt="image" src="https://github.com/user-attachments/assets/f8e9e2c2-602f-4709-bee5-10f9d6b8ed21" />
 
-#
 
 ## Tech & dependencies
  
@@ -38,14 +55,7 @@ here is an example of my actions passing along with secret protection
  
 A GitHub Actions workflow runs the test suite on every pull request to `main` runs `./mvnw test`. Builds pass green before anything merges.
  
-## Clean code
- 
-A few things I focused on:
- 
-- Meaningful names: descriptive loop variables like `singleExpense` instead of `e` (a habit from *Clean Code*, Ch. 2)
-- Immutability:  `Expenses` can't be changed once created
-One job per class .. Expenses holds a cost, BudgetTracker does calculations, BudgetController handles the web layer.
-  
+
 ## Here is a problem I hit
  
 When I moved the project between machines, the Maven wrapper folder (`.mvn`) didn't come across because hidden folders got skipped. I fixed it by installing Maven and running `mvn -N wrapper:wrapper` to regenerate it... which mattered because GitHub Actions runs `./mvnw` and needs that folder.
