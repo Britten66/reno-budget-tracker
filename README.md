@@ -6,6 +6,17 @@ A REST API for tracking a home renovation budget across categories like paint, f
 ## Why I built this
  
 I'm renovating and splitting one investment across a few jobs such as paint, flooring, taking out a wall. I wanted a simple way to track spending against the budget, and it turned into a project to get hands-on with Spring Boot, unit testing, and a CI pipeline.
+
+
+
+
+**Single responsibility** 
+
+every class has one job. 
+
+
+
+
  
 ## What it does
  
@@ -32,15 +43,16 @@ here are my passing tests.
 #
 
 #
-Part of clean code used is meaningful names, for expenses and tests it was important to make sure all defined variables and classes were clearly defined 
+I focused on three clean code practices here, each shown with my own code below.
 
-#
-here is a showcase of some of those names that stand out to me in this project 
+**Meaningful names** 
+
+I used clear variable names so the code explains itself without needing extra comments.
 
 <img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
 
 #
-here is a showcase of using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
+here is a showcase of final use, having the same value 1 job while using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
 The constructor also rejects negative amounts.
 <img width="649" height="205" alt="image" src="https://github.com/user-attachments/assets/b15c2fc4-c4bd-4e3e-a9db-a9b22c7a4a4f" />
 
