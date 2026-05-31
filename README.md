@@ -1,4 +1,5 @@
 # Renovation Budget Tracker
+[![Java CI](https://github.com/Britten66/reno-budget-tracker/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/Britten66/reno-budget-tracker/actions/workflows/maven.yml)
  
 A REST API for tracking a home renovation budget across categories like paint, flooring, and extras. Built with Java and Spring Boot, tested with JUnit 5.
  
