@@ -129,6 +129,18 @@ public class BudgetTrackerTests {
                 () -> new Expenses("paint", -50));
 
     }
+
+
+    // forgot a test so here is test 10 checking float
+
+    @Test
+    void handlingDecimal(){
+        tracker.addExpense(new Expenses("Paint", 49.99));
+        tracker.addExpense(new Expenses("Flooring", 25.50));
+
+        // 49.99 / 25.50 = 75.49
+    assertEquals(75.49, tracker.getTotalExpense(), 0.001);
+    }
 }
 
 
