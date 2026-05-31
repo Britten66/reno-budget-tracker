@@ -32,7 +32,7 @@ here are all off my test cases
  #
 - **spentByCategory**  confirms expenses sum correctly per category
  #
-- **matchingCaseSensitive** (parameterized) — runs "paint", "Paint", "PAINT" to confirm case-insensitive matching
+- **matchingCaseSensitive** (parameterized)  runs "paint", "Paint", "PAINT" to confirm case-insensitive matching
 #
 - **categoryUnknownReturn**  an unknown category returns 0, doesn't crash
 #
