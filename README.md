@@ -24,28 +24,7 @@ For testing I used @BeforeEach to avoid repeating setup before each test, and a 
 
 #
 
-here are all off my test cases 
-#
-- **totalExpensesAddedUp**  adds two expenses, confirms the total sums correct
- #
-- **remainingBudgetIsCorrect**  checks budget minus spending
- #
-- **spentByCategory**  confirms expenses sum correctly per category
- #
-- **matchingCaseSensitive** (parameterized)  runs "paint", "Paint", "PAINT" to confirm case-insensitive matching
-#
-- **categoryUnknownReturn**  an unknown category returns 0, doesn't crash
-#
-- **emptyTracker**  a new tracker has 0 spent
-#
-- **overBudget / notOverBudget**  boolean checks for the over-budget logic
-#
-- **handlingDecimal** confirms decimal amounts work, using a tolerance for floating point
-#
-- **throwIfNegative**  confirms a negative amount throws an exception
 
-Assertions used: `assertEquals`, `assertTrue`, `assertFalse`, and `assertThrows`
-#
 here are my passing tests.
 
 <img width="608" height="353" alt="image" src="https://github.com/user-attachments/assets/e3315613-4a2b-4037-8b5d-df50aa5a18f6" />
@@ -75,6 +54,33 @@ here is an example of my actions passing along with secret protection
 <img width="531" height="335" alt="image" src="https://github.com/user-attachments/assets/f8e9e2c2-602f-4709-bee5-10f9d6b8ed21" />
 
 
+## here are all off my test cases 
+#
+- **totalExpensesAddedUp**  adds two expenses, confirms the total sums correct
+ #
+- **remainingBudgetIsCorrect**  checks budget minus spending
+ #
+- **spentByCategory**  confirms expenses sum correctly per category
+ #
+- **matchingCaseSensitive** (parameterized)  runs "paint", "Paint", "PAINT" to confirm case-insensitive matching
+#
+- **categoryUnknownReturn**  an unknown category returns 0, doesn't crash
+#
+- **emptyTracker**  a new tracker has 0 spent
+#
+- **overBudget / notOverBudget**  boolean checks for the over-budget logic
+#
+- **handlingDecimal** confirms decimal amounts work, using a tolerance for floating point
+#
+- **throwIfNegative**  confirms a negative amount throws an exception
+
+Assertions used: `assertEquals`, `assertTrue`, `assertFalse`, and `assertThrows`
+#
+
+
+
+
+
 ## Tech & dependencies
  
 - **Java 21**
@@ -92,9 +98,9 @@ When I moved the project between machines, the Maven wrapper folder (`.mvn`) did
 
 this cost me a day at least of trouble shooting figuring out why that was happening 
 it resulted in my files being moved out of folders among other confusing bugs. 
-
-
  
+
+
 ---
  
 Built by Christopher Britten 
