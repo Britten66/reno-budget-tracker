@@ -11,6 +11,12 @@ I'm renovating and splitting one investment across a few jobs such as paint, flo
  
 You add expenses by category and it does the math: total spent, budget remaining, spending per category, whether you've gone over budget, and what percent of the budget is used. It runs as a web API, so each of those is reachable at a URL.
 
+## Branching 
+
+Here is a snapshot of my branching while completing this project 
+# 
+<img width="612" height="183" alt="image" src="https://github.com/user-attachments/assets/3b2da691-2ba6-4008-8df5-70b5732804c1" />
+
 
 ## Testing
 
