@@ -43,7 +43,8 @@ package com.reno.budget_tracker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 
 public class BudgetTrackerTests {
@@ -141,6 +142,20 @@ public class BudgetTrackerTests {
         // 49.99 / 25.50 = 75.49
     assertEquals(75.49, tracker.getTotalExpense(), 0.001);
     }
+
+    // noticed in my read me I mentioned on doing this
+    // added this lastly to showcase param testing.. which is cool
+
+
+    @ParameterizedTest
+
+    @ValueSource(strings = {"paint", "Paint", "PAINT"})
+
+    void matchingCaseSensitive(String categoryInput) {
+        tracker.addExpense(new Expenses(categoryInput, 100));
+        assertEquals(100, tracker.getSpentByCategory("paint"));
+    }
+
 }
 
 

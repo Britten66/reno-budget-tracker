@@ -9,6 +9,8 @@ package com.reno.budget_tracker;
 public class Expenses {
 
     // here are my variables and such
+
+
         private final String category;
     private final double amount;
 
