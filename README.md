@@ -27,7 +27,9 @@ Here is a snapshot of my branching while completing this project
 For testing I used @BeforeEach to avoid repeating setup before each test, and a parameterized test to check multiple category inputs (paint, Paint, PAINT)
 
 #
+**Meaningful names** 
 
+I used clear variable names so the code explains itself without needing extra comments.
 
 here are my passing tests.
 
@@ -38,9 +40,7 @@ here are my passing tests.
 #
 I focused on three clean code practices here, each shown with my own code below.
 
-**Meaningful names** 
 
-I used clear variable names so the code explains itself without needing extra comments.
 
 <img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
 
