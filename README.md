@@ -31,25 +31,25 @@ For testing I used @BeforeEach to avoid repeating setup before each test, and a 
 
 I used clear variable names so the code explains itself without needing extra comments.
 
-here are my passing tests.
+here are my passing tests. I focused on three clean code practices here, each shown with my own code below.
+
 
 <img width="608" height="353" alt="image" src="https://github.com/user-attachments/assets/e3315613-4a2b-4037-8b5d-df50aa5a18f6" />
 
 #
 
 #
-I focused on three clean code practices here, each shown with my own code below.
-
-
-
-<img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
-
 
 **Single responsibility** 
 
 every class has one job. 
+
+<img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
+
+
+
 #
-here is a showcase of final use, having the same value 1 job while using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
+here is a showcase of final, while using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
 The constructor also rejects negative amounts.
 <img width="649" height="205" alt="image" src="https://github.com/user-attachments/assets/b15c2fc4-c4bd-4e3e-a9db-a9b22c7a4a4f" />
 
