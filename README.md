@@ -10,14 +10,7 @@ I'm renovating and splitting one investment across a few jobs such as paint, flo
 
 
 
-**Single responsibility** 
 
-every class has one job. 
-
-
-
-
- 
 ## What it does
  
 You add expenses by category and it does the math: total spent, budget remaining, spending per category, whether you've gone over budget, and what percent of the budget is used. It runs as a web API, so each of those is reachable at a URL.
@@ -50,10 +43,11 @@ I focused on three clean code practices here, each shown with my own code below.
 I used clear variable names so the code explains itself without needing extra comments.
 
 <img width="631" height="221" alt="image" src="https://github.com/user-attachments/assets/05d8da03-4e85-417d-ac40-b683b0c68c9c" />
-#
-**Also showcasing Single responsibility** holding and making sure every class has one job.. harder said than done
 
-#
+
+**Single responsibility** 
+
+every class has one job. 
 #
 here is a showcase of final use, having the same value 1 job while using immutablilty by creating expense with using final also with no setters, so a cost can't be changed after it's created.
 The constructor also rejects negative amounts.
